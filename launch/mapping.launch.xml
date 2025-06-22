@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="glim_ros" exec="glim_rosnode" output="screen">
+        <param name="config_path" value="$(find-pkg-share handy_mapping)/config/glim"/>
+    </node>
+</launch>
