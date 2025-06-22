@@ -17,4 +17,9 @@ ros2 bag record /velodyne_points /imu /tf_static
 ```
 
 # generate map
-ros2 run glim_ros glim_rosbag rosbag2_2025_06_22-08_02_32_0.mcap --ros-args -p config_path:=/home/colcon_ws/src/handy_mapping/config/glim
+```bash
+ros2 launch handy_mapping mapping.launch.xml
+```
+```bash
+ros2 bag play BAG_FILE_PATH
+```
